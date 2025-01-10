@@ -14,6 +14,7 @@
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -24,7 +25,7 @@
         <div class="hero-content">
             <h1>Caleb Choi</h1>
             <h2>Software Engineer</h2>
-            <p>Building elegant solutions to complex problems</p>
+            <p>University of Michigan, Computer Science</p>
             <div class="cta-buttons">
                 <a href="#projects" class="btn primary">View My Work</a>
                 <a href="#contact" class="btn secondary">Contact Me</a>
@@ -36,27 +37,108 @@
         <h2>About Me</h2>
         <div class="about-content">
             <div class="about-text">
-                <p>I'm a passionate software engineer with a focus on creating efficient and scalable solutions. With expertise in modern technologies and best practices, I strive to build applications that make a difference.</p>
+                <div class="education">
+                    <h3>Education</h3>
+                    <h4>University of Michigan, College of Literature, Arts, and Sciences</h4>
+                    <p>Bachelor of Science in Computer Science, Minor in Cultural Anthropology</p>
+                    <p>Aug. 2021 - May 2025</p>
+                    <p class="coursework">Relevant Coursework: Computer Organization, Machine Learning, Computer Vision, Operating System, Web Systems</p>
+                </div>
                 <div class="skills">
                     <h3>Technical Skills</h3>
-                    <div class="skill-tags">
-                        <span>JavaScript</span>
-                        <span>Python</span>
-                        <span>React</span>
-                        <span>Node.js</span>
-                        <span>SQL</span>
-                        <span>Git</span>
+                    <div class="skill-category">
+                        <h4>Languages:</h4>
+                        <div class="skill-tags">
+                            <span>Java</span>
+                            <span>Javascript</span>
+                            <span>Python</span>
+                            <span>C++</span>
+                            <span>HTML/CSS</span>
+                            <span>TypeScript</span>
+                            <span>PostgreSQL</span>
+                            <span>Flutter</span>
+                            <span>Dart</span>
+                            <span>JQuery</span>
+                            <span>Terraform</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Developer Tools:</h4>
+                        <div class="skill-tags">
+                            <span>Git</span>
+                            <span>VS Code</span>
+                            <span>Visual Studio</span>
+                            <span>XCode</span>
+                            <span>IntelliJ</span>
+                            <span>Eclipse</span>
+                            <span>Valgrind</span>
+                            <span>Perf</span>
+                            <span>LLDB</span>
+                            <span>GoogleTest</span>
+                            <span>Sentry</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Libraries:</h4>
+                        <div class="skill-tags">
+                            <span>Numpy</span>
+                            <span>TensorFlow</span>
+                            <span>OpenCV</span>
+                            <span>MediaPipe</span>
+                            <span>Pytorch</span>
+                            <span>Flask</span>
+                            <span>React</span>
+                            <span>Jinja2</span>
+                            <span>Docker</span>
+                            <span>Kubernetes</span>
+                            <span>Pytest</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <section id="experience" class="experience">
+        <h2>Experience</h2>
+        <div class="experience-content">
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Software Engineering Intern</h3>
+                    <p class="company">YouVersion: Bible App + Bible App Lite</p>
+                    <p class="duration">September 2024 – December 2024</p>
+                    <p class="location">Edmond, OK</p>
+                </div>
+                <ul class="achievements">
+                    <li>Integrated a Verse Memorization API to Bible App staging, increasing user engagement by a projected 10 percent</li>
+                    <li>Cached user and verse data using Redis on a FastAPI server, vastly improving server response times for the user</li>
+                    <li>Initiated the integration of Google Kubernetes Engine to manage user traffic and wrote over 200 unit tests</li>
+                    <li>Converted existing Bible Lite local geocaching functions into web services to reduce app size by 5 percent</li>
+                    <li>Optimized API response size and frequency to decrease server latency in low connectivity areas by 10 percent</li>
+                    <li>Created a voice controlled deeplink generation feature that allows hands free navigation for 800+ million users</li>
+                    <li>Fine tuned an OpenAI model to produce structured YouVersion API calls with a 90 percent accuracy rate</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Computer Vision Intern</h3>
+                    <p class="company">QView Medical</p>
+                    <p class="duration">June 2023 – October 2023</p>
+                    <p class="location">Los Altos, CA</p>
+                </div>
+                <ul class="achievements">
+                    <li>Spearheaded an Image Detection model meant to identify breast cancer masses within 3D images</li>
+                    <li>Facilitated the training and tuning of a DenseNet model with a successful identification rate of over 90 percent</li>
+                    <li>Optimized the process using error back propagation, aimed to more accurately implement each layer of the CNN</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
     <section id="projects" class="projects">
         <h2>Featured Projects</h2>
-        <div class="project-grid">
-            <!-- Project cards will be dynamically added via JavaScript -->
-        </div>
+        <div class="project-grid"></div>
     </section>
 
     <section id="contact" class="contact">
@@ -64,16 +146,16 @@
         <div class="contact-content">
             <div class="contact-info">
                 <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <a href="mailto:your.email@example.com">your.email@example.com</a>
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:650-224-2280">650-224-2280</a>
                 </div>
                 <div class="contact-item">
-                    <i class="fab fa-github"></i>
-                    <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:calebsc@umich.edu">calebsc@umich.edu</a>
                 </div>
                 <div class="contact-item">
                     <i class="fab fa-linkedin"></i>
-                    <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+                    <a href="https://linkedin.com/in/calebchoi3/" target="_blank">linkedin.com/in/calebchoi3/</a>
                 </div>
             </div>
         </div>

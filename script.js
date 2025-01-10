@@ -1,26 +1,34 @@
-// Sample project data - replace with your actual projects
+// Project data
 const projects = [
     {
-        title: "Project 1",
-        description: "A brief description of your first project. Highlight the key features and technologies used.",
+        title: "Instagram 2: Electric Boogaloo",
+        description: "Developed a full stack Instagram clone that enables users to view, post, like, and comment on posts. Produced an Flask based API that stores and retrieves user data using a SQL database.",
         image: "https://via.placeholder.com/400x200",
-        technologies: ["React", "Node.js", "MongoDB"],
+        technologies: ["HTML", "CSS", "Python", "Flask", "SQL", "React.js"],
         link: "#",
         github: "#"
     },
     {
-        title: "Project 2",
-        description: "Description of your second project. What problems did it solve? What did you learn?",
+        title: "Futuristic Fitness",
+        description: "Built an image based data set of International Powerlifting Federation regulated squats with over 300 files. Utilized Google MediaPipe to analyze a camera livestream, track the user's landmark ratios, and check for proper form given calculated angles.",
         image: "https://via.placeholder.com/400x200",
-        technologies: ["Python", "Django", "PostgreSQL"],
+        technologies: ["Python", "Excel", "MediaPipe"],
         link: "#",
         github: "#"
     },
     {
-        title: "Project 3",
-        description: "Overview of another significant project. Focus on your role and the impact it had.",
+        title: "Minnow Analytics",
+        description: "Made a visually impaired accessible website that brings users time sensitive stock prediction. Trained a TensorFlow model with past year's stock data, with the output being its predicted stock value trend.",
         image: "https://via.placeholder.com/400x200",
-        technologies: ["Vue.js", "Express", "MySQL"],
+        technologies: ["MongoDB", "Streamlit", "TensorFlow", "Kaggle"],
+        link: "#",
+        github: "#"
+    },
+    {
+        title: "RideSharer: Carpool Coordinate",
+        description: "Founded a carpool coordination website that allowed over 200 college students find rides to their local church. Implemented K-Means clustering using Google Geocaching data to find optimal ride pathing for each driver.",
+        image: "https://via.placeholder.com/400x200",
+        technologies: ["PostgreSQL", "Python", "Sci-Kit", "Flask"],
         link: "#",
         github: "#"
     }
@@ -41,10 +49,6 @@ function createProjectCards() {
                 <p>${project.description}</p>
                 <div class="skill-tags">
                     ${project.technologies.map(tech => `<span>${tech}</span>`).join('')}
-                </div>
-                <div class="project-links" style="margin-top: 1rem;">
-                    <a href="${project.link}" class="btn primary" target="_blank">View Live</a>
-                    <a href="${project.github}" class="btn secondary" target="_blank">GitHub</a>
                 </div>
             </div>
         `;
